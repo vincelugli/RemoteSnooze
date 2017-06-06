@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="vince.remotesnoozealarm.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:weightSum="10">
+
+        <ListView
+            android:id="@+id/alarmListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9.9"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="20.0sp"
+            android:paddingTop="10.0sp" />
+
+        <Button
+            android:id="@+id/addAlarm"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:onClick="onAddAlarmButtonClick"
+            android:text="@string/plus" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
